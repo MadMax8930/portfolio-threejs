@@ -1,6 +1,6 @@
 npm create vite@latest ./ -- --template react
-npm install -D tailwindcss
-npx tailwindcss init
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 ---
 npm install --legacy-peer-deps
 @react-three/fiber
