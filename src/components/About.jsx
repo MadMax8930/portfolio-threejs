@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -48,7 +49,7 @@ const About = () => {
         with a keen eye for detail, I always deliver more than expected. I collaborate closely 
         with clients to create efficient, scalable, and user-friendly solutions that solve 
         real-world problems. Let's work together to bring your ideas to life! 
-        <br/>
+        <br/><br/>
         Effort times consistency equals confidence.
       </motion.p>
 
@@ -61,4 +62,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About, "about");
