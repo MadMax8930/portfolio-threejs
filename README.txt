@@ -3,6 +3,7 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ---
 npm install --legacy-peer-deps
+three
 @react-three/fiber
 @react-three/drei
 maath                 ->(Math utility functions for geometry)
