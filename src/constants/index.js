@@ -15,6 +15,10 @@ import {
     git,
     figma,
     docker,
+    angular,
+    java,
+    database,
+    python,
     airbnb,
     machinima,
     simplon,
@@ -82,8 +86,8 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Angular",
+      icon: angular,
     },
     {
       name: "Tailwind CSS",
@@ -94,12 +98,16 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
+      name: "Python",
+      icon: python,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "db",
+      icon: database
     },
     {
       name: "git",

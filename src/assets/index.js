@@ -17,6 +17,10 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import database from "./tech/database.png";
+import angular from "./tech/angular.png";
+import java from "./tech/java.png";
+import python from "./tech/python.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
@@ -53,6 +57,10 @@ export {
   tailwind,
   typescript,
   threejs,
+  python,
+  database,
+  angular,
+  java,
   simplon,
   simplon_bis,
   bugali,
