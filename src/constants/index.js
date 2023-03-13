@@ -182,27 +182,27 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+        "I motivated, but Max proved me wrong.",
+      name: "Soufiane Rouass",
       designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+      company: "Simplon.co",
+      image: "https://s4.aconvert.com/convert/p3r68-cdx67/aryo8-w94wk.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+        "I've never met a web developer who truly cares about their clients' success like Max does.",
+      name: "Claire Riollier",
+      designation: "CXO",
+      company: "Allianz",
+      image: "https://s4.aconvert.com/convert/p3r68-cdx67/aa1nu-ywv9z.jpg",
+    },
+    {
+      testimonial:
+        "I can tell you had enjoyed yourself on this homepage, it is truly incredible!",
+      name: "Eric Groise",
       designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      company: "Bugali",
+      image: "https://s4.aconvert.com/convert/p3r68-cdx67/a4xr2-x9skc.jpg",
     },
   ];
   
@@ -210,7 +210,7 @@ import {
     {
       name: "Car Rent",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
           name: "react",
