@@ -28,6 +28,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    postgresql,
   } from "../assets";
   
   export const navLinks = [
@@ -106,16 +107,16 @@ import {
       icon: java,
     },
     {
-      name: "db",
-      icon: database
-    },
-    {
       name: "git",
       icon: git,
     },
     {
       name: "figma",
       icon: figma,
+    },
+    {
+      name: "Postgres",
+      icon: postgresql
     },
     {
       name: "docker",

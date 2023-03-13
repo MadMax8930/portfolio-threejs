@@ -24,6 +24,7 @@ import python from "./tech/python.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import postgresql from "./tech/postgresql.png";
 
 import simplon from "./company/simplon.png";
 import simplon_bis from "./company/simplon_bis.png";
@@ -63,6 +64,7 @@ export {
   java,
   simplon,
   simplon_bis,
+  postgresql,
   bugali,
   machinima,
   airbnb,
