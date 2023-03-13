@@ -22,7 +22,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import simplon from "./company/simplon.png";
-import simplon2 from "./company/simplon2.png";
+import simplon_bis from "./company/simplon_bis.png";
 import airbnb from "./company/airbnb.png";
 import machinima from "./company/machinima.png";
 import bugali from "./company/bugali.png";
@@ -54,7 +54,7 @@ export {
   typescript,
   threejs,
   simplon,
-  simplon2,
+  simplon_bis,
   bugali,
   machinima,
   airbnb,

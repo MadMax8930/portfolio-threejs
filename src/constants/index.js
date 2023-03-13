@@ -18,7 +18,7 @@ import {
     airbnb,
     machinima,
     simplon,
-    simplon2,
+    simplon_bis,
     bugali,
     carrent,
     jobit,
@@ -145,7 +145,7 @@ import {
     {
       title: "Software Developer",
       company_name: "Simplon",
-      icon: simplon,
+      icon: simplon_bis,
       iconBg: "#383E56",
       date: "Jan 2021 - Feb 2022",
       points: [
