@@ -99,8 +99,8 @@ import {
       icon: nodejs,
     },
     {
-      name: "Python",
-      icon: python,
+      name: "figma",
+      icon: figma,
     },
     {
       name: "Java",
@@ -111,8 +111,8 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Python",
+      icon: python,
     },
     {
       name: "Postgres",
@@ -156,7 +156,7 @@ import {
       company_name: "Simplon",
       icon: simplon_bis,
       iconBg: "#383E56",
-      date: "Jan 2021 - Nov 2022",
+      date: "Jan 2021 - Feb 2022",
       points: [
         "Modeling, conceptualizing and managing SQL databases.",
         "Developing client-server applications according to specifications.",
