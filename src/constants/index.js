@@ -182,7 +182,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I motivated, but Max proved me wrong.",
+        "Well done! You set yourself a goal and you achieved it. I knew I could count on you.",
       name: "Soufiane Rouass",
       designation: "COO",
       company: "Simplon.co",
@@ -190,7 +190,7 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Max does.",
+        "Nowadays not often a developer truly cares about their clients' success like you do.",
       name: "Claire Riollier",
       designation: "CXO",
       company: "Allianz",
@@ -198,7 +198,7 @@ import {
     },
     {
       testimonial:
-        "That personal touch of yours makes the difference. I want this UI pushed to Prod asap!",
+        "That UI personal touch of yours makes the difference. I want it pushed to Prod asap!",
       name: "Eric Groise",
       designation: "CTO",
       company: "Bugali",
