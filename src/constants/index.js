@@ -198,7 +198,7 @@ import {
     },
     {
       testimonial:
-        "I can tell you had enjoyed yourself on this homepage, it is truly incredible!",
+        "That personal touch of yours makes the difference. I want this UI pushed to Prod asap!",
       name: "Eric Groise",
       designation: "CTO",
       company: "Bugali",
