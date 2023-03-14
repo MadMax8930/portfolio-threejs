@@ -26,8 +26,8 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.send(
-      'service_f2jmi61', 
-      'template_bh9bpnc',
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID, 
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
       {
         from_name: form.name,
         to_name: 'Max',
@@ -36,7 +36,7 @@ const Contact = () => {
         message: form.message,
 
       }, 
-      'fdzwdMwJ0bF10cqH2'
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     )
     .then(() => {
       setLoading(false);
