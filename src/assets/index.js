@@ -39,6 +39,8 @@ import claire from "./company/claire.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import tetris from "./tetris.png";
+import replica from "./replica.png";
 
 export {
   logo,
@@ -78,4 +80,6 @@ export {
   eric,
   claire,
   soufiane,
+  tetris,
+  replica
 };
