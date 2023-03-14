@@ -32,6 +32,10 @@ import airbnb from "./company/airbnb.png";
 import machinima from "./company/machinima.png";
 import bugali from "./company/bugali.png";
 
+import eric from "./company/eric.png";
+import soufiane from "./company/soufiane.png";
+import claire from "./company/claire.png";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -71,4 +75,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  eric,
+  claire,
+  soufiane,
 };

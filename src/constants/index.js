@@ -29,6 +29,9 @@ import {
     tripguide,
     threejs,
     postgresql,
+    eric,
+    soufiane,
+    claire,
   } from "../assets";
   
   export const navLinks = [
@@ -186,7 +189,7 @@ import {
       name: "Soufiane Rouass",
       designation: "COO",
       company: "Simplon.co",
-      image: "https://s4.aconvert.com/convert/p3r68-cdx67/aryo8-w94wk.jpg",
+      image: soufiane,
     },
     {
       testimonial:
@@ -194,7 +197,7 @@ import {
       name: "Claire Riollier",
       designation: "CXO",
       company: "Allianz",
-      image: "https://s4.aconvert.com/convert/p3r68-cdx67/aa1nu-ywv9z.jpg",
+      image: claire,
     },
     {
       testimonial:
@@ -202,7 +205,7 @@ import {
       name: "Eric Groise",
       designation: "CTO",
       company: "Bugali",
-      image: "https://s4.aconvert.com/convert/p3r68-cdx67/a4xr2-x9skc.jpg",
+      image: eric,
     },
   ];
   
