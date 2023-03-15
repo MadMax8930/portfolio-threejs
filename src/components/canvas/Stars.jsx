@@ -1,8 +1,8 @@
-import { useState, useRef, useEffect, Suspense } from 'react';
+import { useState, useRef, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial, Preload } from '@react-three/drei';
 import * as random from 'maath/random/dist/maath-random.esm';
-import renderer from '../../renderer';
+// import * as THREE from 'three';
 
 const Stars = (props) => {
   const ref = useRef();
@@ -12,7 +12,7 @@ const Stars = (props) => {
   
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.x -= delta / 15;
+    ref.current.rotation.y -= delta / 15;
   });
 
   return (
@@ -30,38 +30,42 @@ const Stars = (props) => {
   )
 };
 
-const StarsCanvas = () => {
 
-  return (
-        <div className='w-full h-auto absolute inset-0 z-[-1]'>
-          {renderer && (
-            renderer.render(
-              (<Canvas camera={{ position: [0, 0, 1] }}>
-                <Suspense fallback={null}>
-                  <Stars />
-                </Suspense>
-                <Preload all />
-              </Canvas>),
-              renderer.getContext().canvas
-            )
-          )}
-        </div>
-      )
-};
+// const StarsCanvas = () => {  
+//   const renderer = new THREE.WebGLRenderer({ antialias: true });
+//   renderer.setClearColor('#000000');
+//   renderer.setPixelRatio(window.devicePixelRatio);
 
-export default StarsCanvas;
-
-// const StarsCanvas = () => {
 //   return (
-//     <div className='w-full h-auto absolute inset-0 z-[-1]'>
-//       <Canvas camera={{ position: [0, 0, 1] }}>
-//         <Suspense fallback={null}>
-//           <Stars />
-//         </Suspense>
-//         <Preload all />
-//       </Canvas>
-//     </div>
-//   )
+//         <div className='w-full h-auto absolute inset-0 z-[-1]'>
+//           {renderer && (
+//             renderer.render(
+//               (<Canvas camera={{ position: [0, 0, 1] }}>
+//                 <Suspense fallback={null}>
+//                   <Stars />
+//                 </Suspense>
+//                 <Preload all />
+//               </Canvas>),
+//               renderer.getContext().canvas
+//             )
+//           )}
+//         </div>
+//       )
 // };
 
 // export default StarsCanvas;
+
+const StarsCanvas = () => {
+  return (
+    <div className='w-full h-auto absolute inset-0 z-[-1]'>
+      <Canvas camera={{ position: [0, 0, 1] }}>
+        <Suspense fallback={null}>
+          <Stars />
+        </Suspense>
+        <Preload all />
+      </Canvas>
+    </div>
+  )
+};
+
+export default StarsCanvas;
