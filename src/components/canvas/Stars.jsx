@@ -35,7 +35,7 @@ const StarsCanvas = () => {
   const renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setClearColor('#000000');
   renderer.setPixelRatio(window.devicePixelRatio);
-
+  
   return (
         <div className='w-full h-auto absolute inset-0 z-[-1]'>
           {renderer && (
