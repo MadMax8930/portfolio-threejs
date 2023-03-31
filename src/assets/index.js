@@ -23,6 +23,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import postgresql from "./tech/postgresql.png";
+import mongodb from "./tech/mongodb.png";
 
 import simplon from "./company/simplon.png";
 import simplon_bis from "./company/simplon_bis.png";
@@ -34,11 +35,14 @@ import eric from "./company/eric.png";
 import soufiane from "./company/soufiane.png";
 import claire from "./company/claire.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import tetris from "./tetris.png";
-import replica from "./replica.png";
+import tetris_project from "./tetris.png";
+import replica_project from "./replica.png";
+import crypto_project from "./crypto.png";
+import twitter_project from "./twitter.png";
+import carhub_project from "./carhub.png";
+import youtube_project from "./youtube.png";
+import airbnb_project from "./airbnb.png";
+import fitness_project from "./fitness.png";
 
 export {
   logo,
@@ -67,15 +71,19 @@ export {
   simplon,
   simplon_bis,
   postgresql,
+  mongodb,
   bugali,
   machinima,
   airbnb,
-  carrent,
-  jobit,
-  tripguide,
   eric,
   claire,
   soufiane,
-  tetris,
-  replica
+  tetris_project,
+  replica_project,
+  crypto_project,
+  twitter_project,
+  carhub_project,
+  youtube_project,
+  airbnb_project,
+  fitness_project,
 };

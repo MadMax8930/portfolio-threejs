@@ -22,16 +22,20 @@ import {
     simplon,
     simplon_bis,
     bugali,
-    carrent,
-    jobit,
-    tripguide,
-    tetris,
     threejs,
     postgresql,
+    mongodb,
     eric,
     soufiane,
     claire,
-    replica,
+    tetris_project,
+    replica_project,
+    crypto_project,
+    twitter_project,
+    carhub_project,
+    youtube_project,
+    airbnb_project,
+    fitness_project,
   } from "../assets";
   
   export const navLinks = [
@@ -119,12 +123,16 @@ import {
     },
     {
       name: "Postgres",
-      icon: postgresql
+      icon: postgresql,
     },
     {
       name: "docker",
       icon: docker,
     },
+   //  {
+   //    name: "MongoDB",
+   //    icon: mongodb,
+   //  },
   ];
   
   const experiences = [
@@ -211,9 +219,59 @@ import {
   
   const projects = [
     {
-      name: "Tetris",
+      name: "Crypto Redux",
       description:
-        "Web platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Cryptocurrency application that fetches data from a coin ranking API, displays various news articles and shows evolution charts in the reference to the selected token.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "api",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "ant-design",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "redux-toolkit",
+          color: "purple-text-gradient",
+        },
+      ],
+      image: crypto_project,
+      source_code_link: "https://github.com/MadMax8930/crypto-redux",
+    },
+    {
+      name: "Twitter Clone",
+      description:
+        "Social app that once authenticated allows users to post tweets, reply to tweets, like tweets with notification trigger and follow other users saved in a mongoDB database.",
+      tags: [
+        {
+          name: "next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "prisma",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "zustand",
+          color: "purple-text-gradient",
+        },
+      ],
+      image: twitter_project,
+      source_code_link: "https://github.com/MadMax8930/twitter-clone",
+    },
+    {
+      name: "Airbnb Replica",
+      description:
+        "M.E.R.N project with authentication, just like the original one, this website allows users to create new listings as hosts, book properties and view its information on their profile page.",
       tags: [
         {
           name: "react",
@@ -227,51 +285,80 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "express",
+          color: "purple-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: airbnb_project,
+      source_code_link: "https://github.com/MadMax8930/mern-airbnb",
     },
     {
-      name: "Under Armour",
+      name: "Fitness App",
       description:
-        "Replica of the Under Armour website. Fully responsive, similar to the original one. Agile work with three other devs, sections merged together. Deployed on netlify",
+        "Workout website that allows to search gym exercises by targeting a specific body part, show how to do it with GIF illustrations and even fetch different video tutorials from YT.",
       tags: [
         {
-          name: "javascript",
-          color: "orange-text-gradient",
-        },
-        {
-          name: "html",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: replica,
-      source_code_link: "https://under-armour-replica.netlify.app/",
-    },
-    {
-      name: "Tetris",
-      description:
-        "My favorite childhood game recreated on vanilla js. Implementation of the playfield, shapes, collisions, block rotations, animated interactions with arrow keys. Try it yourself!",
-      tags: [
-        {
-          name: "javascript",
+          name: "rapid-api",
           color: "orange-text-gradient",
         },
         {
-          name: "html",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "css",
+          name: "material-ui",
           color: "pink-text-gradient",
         },
       ],
-      image: tetris,
-      source_code_link: "https://tetris-in-js.netlify.app/",
+      image: fitness_project,
+      source_code_link: "https://github.com/MadMax8930/fitness-app",
+    },
+    {
+      name: "Youtube Media",
+      description:
+        "Personal YT media platform with a custom search term sidebar, fetching content via the Youtube v3 API and displaying it responsively with a react-player component.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "youtube-api",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "material-ui",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: youtube_project,
+      source_code_link: "https://github.com/MadMax8930/yt-media-clone",
+    },
+    {
+      name: "Car Showcase",
+      description:
+        "Next.js server-side rendered app that fetches from an API different car information like brands, models, fuel-type, displays data in modals with search and filtering capabilities.",
+      tags: [
+        {
+          name: "next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "api",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "headless-ui",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "ssr",
+          color: "purple-text-gradient",
+        },
+      ],
+      image: carhub_project,
+      source_code_link: "https://github.com/MadMax8930/nextjs-car-showcase",
     },
   ];
   

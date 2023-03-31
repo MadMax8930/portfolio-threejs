@@ -23,3 +23,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+READI.md
+.gitignore
+package-lock.json
+postcss.config.cjs
