@@ -33,10 +33,10 @@ import bugali from "./company/bugali.png";
 
 import eric from "./company/eric.png";
 import soufiane from "./company/soufiane.png";
+import soufiane_bw from "./company/soufiane-modified.png";
 import claire from "./company/claire.png";
+import claire_bw from "./company/claire-modified.png";
 
-import tetris_project from "./tetris.png";
-import replica_project from "./replica.png";
 import crypto_project from "./crypto.png";
 import twitter_project from "./twitter.png";
 import carhub_project from "./carhub.png";
@@ -77,9 +77,9 @@ export {
   airbnb,
   eric,
   claire,
+  claire_bw,
   soufiane,
-  tetris_project,
-  replica_project,
+  soufiane_bw,
   crypto_project,
   twitter_project,
   carhub_project,

@@ -27,9 +27,9 @@ import {
     mongodb,
     eric,
     soufiane,
+    soufiane_bw,
     claire,
-    tetris_project,
-    replica_project,
+    claire_bw,
     crypto_project,
     twitter_project,
     carhub_project,
@@ -196,8 +196,8 @@ import {
         "Well done! You set yourself a goal and you achieved it. I knew I could count on you.",
       name: "Soufiane Rouass",
       designation: "COO",
-      company: "Simplon.co",
-      image: soufiane,
+      company: "Simplon",
+      image: soufiane_bw,
     },
     {
       testimonial:
@@ -205,7 +205,7 @@ import {
       name: "Claire Riollier",
       designation: "CXO",
       company: "Allianz",
-      image: claire,
+      image: claire_bw,
     },
     {
       testimonial:
@@ -228,16 +228,12 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "api",
-          color: "orange-text-gradient",
+          name: "redux",
+          color: "purple-text-gradient",
         },
         {
           name: "ant-design",
           color: "pink-text-gradient",
-        },
-        {
-          name: "redux-toolkit",
-          color: "purple-text-gradient",
         },
       ],
       image: crypto_project,
@@ -260,10 +256,6 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
-        {
-          name: "zustand",
-          color: "purple-text-gradient",
-        },
       ],
       image: twitter_project,
       source_code_link: "https://github.com/MadMax8930/twitter-clone",
@@ -274,7 +266,7 @@ import {
         "M.E.R.N project with authentication, just like the original one, this website allows users to create new listings as hosts, book properties and view its information on their profile page.",
       tags: [
         {
-          name: "react",
+          name: "express",
           color: "blue-text-gradient",
         },
         {
@@ -284,10 +276,6 @@ import {
         {
           name: "tailwind",
           color: "pink-text-gradient",
-        },
-        {
-          name: "express",
-          color: "purple-text-gradient",
         },
       ],
       image: airbnb_project,
@@ -303,7 +291,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "rapid-api",
+          name: "api",
           color: "orange-text-gradient",
         },
         {
@@ -324,7 +312,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "youtube-api",
+          name: "api",
           color: "orange-text-gradient",
         },
         {
@@ -351,10 +339,6 @@ import {
         {
           name: "headless-ui",
           color: "pink-text-gradient",
-        },
-        {
-          name: "ssr",
-          color: "purple-text-gradient",
         },
       ],
       image: carhub_project,
