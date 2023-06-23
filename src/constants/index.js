@@ -113,9 +113,13 @@ import {
       name: "Java",
       icon: java,
     },
+   //  {
+   //    name: "git",
+   //    icon: git,
+   //  },
     {
-      name: "git",
-      icon: git,
+      name: "MongoDB",
+      icon: mongodb,
     },
     {
       name: "Python",
@@ -129,10 +133,6 @@ import {
       name: "docker",
       icon: docker,
     },
-   //  {
-   //    name: "MongoDB",
-   //    icon: mongodb,
-   //  },
   ];
   
   const experiences = [
@@ -261,27 +261,6 @@ import {
       source_code_link: "https://github.com/MadMax8930/twitter-clone",
     },
     {
-      name: "Airbnb Replica",
-      description:
-        "M.E.R.N project with authentication, just like the original one, this website allows users to create new listings as hosts, book properties and view its information on their profile page.",
-      tags: [
-        {
-          name: "express",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: airbnb_project,
-      source_code_link: "https://github.com/MadMax8930/mern-airbnb",
-    },
-    {
       name: "Fitness App",
       description:
         "Workout website that allows to search gym exercises by targeting a specific body part, show how to do it with GIF illustrations and even fetch different video tutorials from YT.",
@@ -301,6 +280,27 @@ import {
       ],
       image: fitness_project,
       source_code_link: "https://github.com/MadMax8930/fitness-app",
+    },
+    {
+      name: "Car Showcase",
+      description:
+        "Next.js server-side rendered app that fetches from an API different car information like brands, models, fuel-type, displays data in modals with search and filtering capabilities.",
+      tags: [
+        {
+          name: "next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "api",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "headless-ui",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: carhub_project,
+      source_code_link: "https://github.com/MadMax8930/nextjs-car-showcase",
     },
     {
       name: "Youtube Media",
@@ -324,25 +324,25 @@ import {
       source_code_link: "https://github.com/MadMax8930/yt-media-clone",
     },
     {
-      name: "Car Showcase",
+      name: "Airbnb Replica",
       description:
-        "Next.js server-side rendered app that fetches from an API different car information like brands, models, fuel-type, displays data in modals with search and filtering capabilities.",
+        "M.E.R.N project with authentication, just like the original one, this website allows users to create new listings as hosts, book properties and view its information on their profile page.",
       tags: [
         {
-          name: "next.js",
+          name: "express",
           color: "blue-text-gradient",
         },
         {
-          name: "api",
-          color: "orange-text-gradient",
+          name: "mongodb",
+          color: "green-text-gradient",
         },
         {
-          name: "headless-ui",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: carhub_project,
-      source_code_link: "https://github.com/MadMax8930/nextjs-car-showcase",
+      image: airbnb_project,
+      source_code_link: "https://github.com/MadMax8930/mern-airbnb",
     },
   ];
   

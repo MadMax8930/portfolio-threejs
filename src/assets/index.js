@@ -37,12 +37,20 @@ import soufiane_bw from "./company/soufiane-modified.png";
 import claire from "./company/claire.png";
 import claire_bw from "./company/claire-modified.png";
 
-import crypto_project from "./crypto.png";
-import twitter_project from "./twitter.png";
-import carhub_project from "./carhub.png";
-import youtube_project from "./youtube.png";
-import airbnb_project from "./airbnb.png";
-import fitness_project from "./fitness.png";
+import crypto_project from "./project/crypto-modified.png";
+import twitter_project from "./project/twitter-modified.png";
+import carhub_project from "./project/carhub-modified.png";
+import youtube_project from "./project/youtube-modified.png";
+import airbnb_project from "./project/airbnb-modified.png";
+import fitness_project from "./project/fitness-modified.png";
+
+// import crypto_project from "./crypto.png";
+// import twitter_project from "./twitter.png";
+// import carhub_project from "./carhub.png";
+// import youtube_project from "./youtube.png";
+// import airbnb_project from "./airbnb.png";
+// import fitness_project from "./fitness.png";
+
 
 export {
   logo,
