@@ -24,10 +24,10 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className='w-9 h-9 object-contain'/>
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>&nbsp;Max Surnin&nbsp;
-           <span className='sm:block hidden'>| Portfolio</span>
+           <span className='md:block hidden'>| Portfolio</span>
           </p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10 md:gap-6 sm:gap-4'>
           {navLinks.map((link) => (
             <li
              key={link.id}
