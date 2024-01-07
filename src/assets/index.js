@@ -43,6 +43,7 @@ import carhub_project from "./project/carhub-modified.png";
 import youtube_project from "./project/youtube-modified.png";
 import airbnb_project from "./project/airbnb-modified.png";
 import fitness_project from "./project/fitness-modified.png";
+import sneakers_project from "./project/sneakers-modified.png";
 
 // import crypto_project from "./crypto.png";
 // import twitter_project from "./twitter.png";
@@ -94,4 +95,5 @@ export {
   youtube_project,
   airbnb_project,
   fitness_project,
+  sneakers_project,
 };

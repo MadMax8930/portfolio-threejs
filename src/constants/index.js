@@ -36,6 +36,7 @@ import {
     youtube_project,
     airbnb_project,
     fitness_project,
+    sneakers_project,
   } from "../assets";
   
   export const navLinks = [
@@ -265,7 +266,7 @@ import {
       source_code_link: "https://github.com/MadMax8930/twitter-clone",
     },
     {
-      name: "Fitness App",
+      name: "Fitness Site",
       description:
         "Workout website that allows to search gym exercises by targeting a specific body part, show how to do it with GIF illustrations and even fetch different video tutorials from YT.",
       tags: [
@@ -307,25 +308,25 @@ import {
       source_code_link: "https://github.com/MadMax8930/nextjs-car-showcase",
     },
     {
-      name: "Youtube Media",
+      name: "Sneakers App",
       description:
-        "Personal YT media platform with a custom search term sidebar, fetching content via the Youtube v3 API and displaying it responsively with a react-player component.",
+        "Web scraping application giving people info about the latest sneaker releases. Allowing users to 'cop' items, leave comments and receive notifications directly on their emails.",
       tags: [
         {
-          name: "react",
+          name: "next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "api",
+          name: "express",
           color: "orange-text-gradient",
         },
         {
-          name: "material-ui",
-          color: "pink-text-gradient",
+          name: "mongoose",
+          color: "green-text-gradient",
         },
       ],
-      image: youtube_project,
-      source_code_link: "https://github.com/MadMax8930/yt-media-clone",
+      image: sneakers_project,
+      source_code_link: "https://github.com/MadMax8930/snkrs-app",
     },
     {
       name: "Airbnb Replica",
@@ -334,7 +335,7 @@ import {
       tags: [
         {
           name: "express",
-          color: "blue-text-gradient",
+          color: "orange-text-gradient",
         },
         {
           name: "mongodb",
