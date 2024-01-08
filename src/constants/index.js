@@ -17,6 +17,7 @@ import {
     java,
     database,
     python,
+    nextjs,
     airbnb,
     machinima,
     simplon,
@@ -77,7 +78,7 @@ import {
     },
   ];
   
-  const technologies = [
+  const technologiesForDesktop = [
     {
       name: "HTML 5",
       icon: html,
@@ -95,6 +96,10 @@ import {
       icon: typescript,
     },
     {
+      name: "Next JS",
+      icon: nextjs,
+    },
+    {
       name: "React JS",
       icon: reactjs,
     },
@@ -103,16 +108,16 @@ import {
       icon: angular,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
       name: "Node JS",
       icon: nodejs,
     },
     {
       name: "figma",
       icon: figma,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
     },
     {
       name: "Java",
@@ -137,6 +142,41 @@ import {
     {
       name: "docker",
       icon: docker,
+    },
+  ];
+
+  const technologiesForMobile = [
+    {
+      name: "HTML 5",
+      icon: html,
+    },
+    {
+      name: "TypeScript",
+      icon: typescript,
+    },
+    {
+      name: "Next JS",
+      icon: nextjs,
+    },
+    {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
+      name: "docker",
+      icon: docker,
+    },
+    {
+      name: "CSS 3",
+      icon: css,
+    },
+    {
+      name: "CSS 3",
+      icon: css,
+    },
+    {
+      name: "CSS 3",
+      icon: css,
     },
   ];
   
@@ -351,4 +391,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologiesForDesktop, technologiesForMobile, experiences, testimonials, projects };

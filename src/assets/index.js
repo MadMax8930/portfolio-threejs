@@ -24,6 +24,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import postgresql from "./tech/postgresql.png";
 import mongodb from "./tech/mongodb.png";
+import nextjs from "./tech/nextjs.png";
 
 import simplon from "./company/simplon.png";
 import simplon_bis from "./company/simplon_bis.png";
@@ -81,6 +82,7 @@ export {
   simplon_bis,
   postgresql,
   mongodb,
+  nextjs,
   bugali,
   machinima,
   airbnb,

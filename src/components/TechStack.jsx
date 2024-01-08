@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BallCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
-import { technologies } from '../constants';
+import { technologiesForDesktop, technologiesForMobile } from '../constants';
 
 const TechStack = () => {
    const [visibleTechnologies, setVisibleTechnologies] = useState(technologies);
@@ -11,9 +11,9 @@ const TechStack = () => {
        const screenWidth = window.innerWidth;
  
        if (screenWidth < 660) {
-         setVisibleTechnologies(technologies.slice(0, 6)); // Display the first six items for mobile
+         setVisibleTechnologies(technologiesForMobile);
        } else {
-         setVisibleTechnologies(technologies); // Display all items for desktop
+         setVisibleTechnologies(technologiesForDesktop);
        }
      };
  
