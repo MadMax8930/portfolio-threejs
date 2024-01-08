@@ -4,7 +4,7 @@ import { SectionWrapper } from '../hoc';
 import { technologiesForDesktop, technologiesForMobile } from '../constants';
 
 const TechStack = () => {
-   const [visibleTechnologies, setVisibleTechnologies] = useState(technologies);
+   const [visibleTechnologies, setVisibleTechnologies] = useState(technologiesForDesktop);
 
    useEffect(() => {
      const handleResize = () => {
