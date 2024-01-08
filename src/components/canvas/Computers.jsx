@@ -48,7 +48,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      className='sm:flex hidden'
+      className='sm:flex sm:pl-12 hidden'
       frameloop='demand'
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
