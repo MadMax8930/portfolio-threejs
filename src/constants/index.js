@@ -151,6 +151,10 @@ import {
       icon: nextjs,
     },
     {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
       name: "TypeScript",
       icon: typescript,
     },
@@ -165,10 +169,6 @@ import {
     {
       name: "docker",
       icon: docker,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
     },
   ];
   
