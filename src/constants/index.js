@@ -83,10 +83,10 @@ import {
       name: "HTML 5",
       icon: html,
     },
-   //  {
-   //    name: "CSS 3",
-   //    icon: css,
-   //  },
+    {
+      name: "CSS 3",
+      icon: css,
+    },
     {
       name: "JavaScript",
       icon: javascript,
@@ -108,16 +108,16 @@ import {
       icon: angular,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
       name: "figma",
       icon: figma,
     },
+   //  {
+   //    name: "Tailwind CSS",
+   //    icon: tailwind,
+   //  },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "Node JS",
+      icon: nodejs,
     },
     {
       name: "Java",
@@ -128,12 +128,12 @@ import {
    //    icon: git,
    //  },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
       name: "Python",
       icon: python,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
     },
     {
       name: "Postgres",
@@ -147,36 +147,28 @@ import {
 
   const technologiesForMobile = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "Next JS",
+      icon: nextjs,
     },
     {
       name: "TypeScript",
       icon: typescript,
     },
     {
-      name: "Next JS",
-      icon: nextjs,
-    },
-    {
       name: "Node JS",
       icon: nodejs,
+    },
+    {
+      name: "Python",
+      icon: python,
     },
     {
       name: "docker",
       icon: docker,
     },
     {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
+      name: "MongoDB",
+      icon: mongodb,
     },
   ];
   
