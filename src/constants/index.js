@@ -122,22 +122,22 @@ import {
    //    name: "git",
    //    icon: git,
    //  },
-   //  {
-   //    name: "MongoDB",
-   //    icon: mongodb,
-   //  },
-   //  {
-   //    name: "Python",
-   //    icon: python,
-   //  },
-   //  {
-   //    name: "Postgres",
-   //    icon: postgresql,
-   //  },
-   //  {
-   //    name: "docker",
-   //    icon: docker,
-   //  },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "Postgres",
+      icon: postgresql,
+    },
+    {
+      name: "docker",
+      icon: docker,
+    },
   ];
   
   const experiences = [
