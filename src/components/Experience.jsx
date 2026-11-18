@@ -1,5 +1,5 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
@@ -97,9 +97,20 @@ const EducationCard = ({ item }) => (
 )
 
 const Experience = () => {
+  const prefersReducedMotion = useReducedMotion();
+  const workHeadingVariants = prefersReducedMotion
+    ? { hidden: { opacity: 1, y: 0 }, show: { opacity: 1, y: 0 } }
+    : textVariant();
+
   return (
     <>
-     <motion.div variants={textVariant()} className='text-left'>
+     <motion.div
+      variants={workHeadingVariants}
+      initial={prefersReducedMotion ? false : 'hidden'}
+      whileInView='show'
+      viewport={{ once: true, amount: 0.1, margin: '0px 0px 120px 0px' }}
+      className='text-left'
+     >
       <p className={styles.sectionSubText}>WHAT I HAVE DONE SO FAR</p>
       <h2 className={styles.sectionHeadText}>Work Experience.</h2>
      </motion.div>

@@ -43,7 +43,28 @@ const Feedbacks = () => {
     <div className='mt-6 bg-black-100 rounded-[20px]'>
       <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
+          <div className='flex items-start justify-between gap-4'>
+            <p className={styles.sectionSubText}>What others say</p>
+            <div
+              aria-hidden='true'
+              className='mt-1 flex h-11 w-10 shrink-0 items-center justify-center rounded-xl border border-[#915eff]/30 bg-[#915eff]/[0.08]'
+            >
+              <svg
+                viewBox='0 0 24 28'
+                width='20'
+                height='24'
+                fill='none'
+                stroke='currentColor'
+                strokeWidth='1.5'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                className='text-[#c4b5fd]'
+              >
+                <path d='M5 3.75h14v20.5l-7-4.75-7 4.75z' />
+                <path d='M9.5 9h2v3h-3v-2a1 1 0 0 1 1-1Zm5 0h2v3h-3v-2a1 1 0 0 1 1-1Z' fill='currentColor' stroke='none' />
+              </svg>
+            </div>
+          </div>
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
       </div>

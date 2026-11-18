@@ -23,15 +23,15 @@
 }
 
 .project-image {
-  filter: saturate(0.86) contrast(0.96) brightness(0.94);
+  filter: saturate(0.82) contrast(0.94) brightness(0.86);
 }
 
 .project-image-overlay {
   background: linear-gradient(
     135deg,
-    rgba(145, 94, 255, 0.12) 0%,
-    rgba(63, 46, 112, 0.035) 48%,
-    rgba(7, 5, 18, 0.25) 100%
+    rgba(145, 94, 255, 0.16) 0%,
+    rgba(63, 46, 112, 0.06) 48%,
+    rgba(7, 5, 18, 0.28) 100%
   );
 }
 
