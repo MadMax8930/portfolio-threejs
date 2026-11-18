@@ -40,7 +40,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
 
 const Feedbacks = () => {
   return (
-    <div className='mt-12 bg-black-100 rounded-[20px]'>
+    <div className='mt-6 bg-black-100 rounded-[20px]'>
       <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>
@@ -57,4 +57,8 @@ const Feedbacks = () => {
   )
 }
 
-export default SectionWrapper(Feedbacks, "")
+export default SectionWrapper(
+  Feedbacks,
+  "",
+  "sm:px-16 px-6 sm:pt-10 sm:pb-16 pt-6 pb-10"
+)

@@ -99,12 +99,12 @@ const EducationCard = ({ item }) => (
 const Experience = () => {
   return (
     <>
-     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>What I have done so far</p>
+     <motion.div variants={textVariant()} className='text-left'>
+      <p className={styles.sectionSubText}>WHAT I HAVE DONE SO FAR</p>
       <h2 className={styles.sectionHeadText}>Work Experience.</h2>
      </motion.div>
 
-     <div className='mt-20 flex flex-col'>
+     <div className='mt-10 flex flex-col'>
       <VerticalTimeline>
         {experiences.map((experience) => (
           <ExperienceCard key={`${experience.date}-${experience.title}`} experience={experience} />
@@ -112,12 +112,12 @@ const Experience = () => {
       </VerticalTimeline>
      </div>
 
-     <motion.div variants={textVariant()} className='mt-20'>
-      <p className={styles.sectionSubText}>Academic background</p>
+     <motion.div variants={textVariant()} className='mt-16 text-left'>
+      <p className={styles.sectionSubText}>ACADEMIC BACKGROUND</p>
       <h2 className={styles.sectionHeadText}>Education.</h2>
      </motion.div>
 
-     <div className='mt-12 flex flex-col'>
+     <div className='mt-10 flex flex-col'>
       <VerticalTimeline>
         {education.map((item) => (
           <EducationCard key={`${item.date}-${item.title}`} item={item} />

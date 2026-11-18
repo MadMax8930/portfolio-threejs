@@ -21,7 +21,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         gyroscope={false}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='project-image-frame relative h-[230px] w-full overflow-hidden rounded-2xl'>
           <img
             src={image}
             alt={`${name} project preview`}
@@ -29,10 +29,12 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             height="408"
             loading="lazy"
             decoding="async"
-            className='w-full h-full object-cover rounded-2xl'
+            className='project-image h-full w-full object-cover'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div aria-hidden='true' className='project-image-overlay pointer-events-none absolute inset-0' />
+
+          <div className='card-img_hover absolute inset-0 z-10 m-3 flex justify-end'>
             <a
              href={source_code_link}
              target="_blank"
@@ -94,4 +96,8 @@ const Projects = () => {
   )
 }
 
-export default SectionWrapper(Projects, "projects");
+export default SectionWrapper(
+  Projects,
+  "projects",
+  "sm:px-16 px-6 sm:pt-16 sm:pb-10 pt-10 pb-6"
+);
