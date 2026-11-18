@@ -12,9 +12,13 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient'/>
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Max</span></h1>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            <span className='text-[#915eff]'>Max Surnin</span>
+          </h1>
           <p className={`${styles.heroSubText}`}>
-            I develop visual content, user <br className='sm:block hidden'/>interfaces and web applications
+            Full-stack software engineer &amp; independent AI builder.
+            <br className='sm:block hidden' />
+            Bangkok-based, working with international teams.
           </p>
           <a
             href='https://linktr.ee/maxsurnin'
