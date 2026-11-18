@@ -35,6 +35,20 @@
   );
 }
 
+@media (max-width: 639px) {
+  .vertical-timeline::before {
+    left: 8px;
+  }
+
+  .vertical-timeline-element-icon {
+    left: -10px;
+  }
+
+  .vertical-timeline-element-content {
+    margin-left: 50px;
+  }
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
