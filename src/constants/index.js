@@ -194,7 +194,6 @@ import {
         "Building full-stack applications from scoping and architecture through backend, database design and deployment.",
         "2025-present: Independent AI engineering, including AI agents, workflow automation, LLM integrations, AI-powered applications, software architecture and cinematic production workflows.",
         "Integrating OpenAI and Anthropic APIs with production prompts, structured outputs, tools and agentic flows.",
-        "Developing AI cinematic workflows with Veo, Kling, Suno, CapCut and custom prompts for the Russkhof channel.",
         "Concurrent online English tutoring through Preply, working with international learners in a multilingual environment.",
       ],
     },
@@ -227,7 +226,7 @@ import {
     },
     {
       title: "Content Creator & Digital Producer - Russkhof",
-      company_name: "Independent channel | Machinima partnership | Online",
+      company_name: "Independent channel | Machinima partnership",
       icon: null,
       iconSymbol: "cinema",
       iconBg: "#383E56",

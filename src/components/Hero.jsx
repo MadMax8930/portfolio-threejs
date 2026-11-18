@@ -16,6 +16,15 @@ const Hero = () => {
           <p className={`${styles.heroSubText}`}>
             I develop visual content, user <br className='sm:block hidden'/>interfaces and web applications
           </p>
+          <a
+            href='https://linktr.ee/maxsurnin'
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='More about me (opens in a new tab)'
+            className='mt-6 inline-flex min-h-[44px] items-center justify-center rounded-full border border-[#915eff]/60 px-5 text-[11px] font-medium tracking-[0.16em] text-[#dfd9ff] transition-colors duration-200 hover:border-[#915eff] hover:bg-[#915eff]/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#915eff] focus-visible:ring-offset-2 focus-visible:ring-offset-primary sm:absolute sm:right-0 sm:top-0 sm:mt-0 sm:z-10'
+          >
+            MORE ABOUT ME ↗
+          </a>
         </div>
       </div>
 

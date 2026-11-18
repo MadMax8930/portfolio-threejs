@@ -13,6 +13,12 @@
   color-scheme: dark;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
