@@ -130,7 +130,13 @@ const Experience = () => {
       </VerticalTimeline>
      </div>
 
-     <motion.div variants={textVariant()} className='mt-16 text-left'>
+     <motion.div
+      variants={workHeadingVariants}
+      initial={prefersReducedMotion ? false : 'hidden'}
+      whileInView='show'
+      viewport={{ once: true, amount: 0.2 }}
+      className='mt-16 text-left'
+     >
       <p className={styles.sectionSubText}>ACADEMIC BACKGROUND</p>
       <h2 className={styles.sectionHeadText}>Education.</h2>
      </motion.div>
