@@ -23,7 +23,7 @@ const ServiceCard = ({ index, title, icon }) => (
         <div
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain"/>
+          <img src={icon} alt="" aria-hidden="true" width="64" height="64" loading="lazy" decoding="async" className="w-16 h-16 object-contain"/>
           <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
         </div>
       </motion.div>
@@ -44,13 +44,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a self-taught software developer with experience in Typescript and Javascript, 
-        proficiency in React, Angular, Node.js and a brand new passion for Python. Quick learner, 
-        with a keen eye for detail, I always deliver more than expected. I collaborate closely 
-        with clients to create efficient, scalable, and user-friendly solutions that solve 
-        real-world problems. Let's work together to bring your ideas to life! 
-        <br/><br/>
-        Effort times consistency equals confidence.
+        I'm Max Surnin, a Bangkok-based full-stack software engineer and independent AI builder working with international teams. I design and build web applications with React, Next.js, Node.js and TypeScript, and develop AI agents, LLM integrations, AI-powered applications and workflow automation. My work includes software architecture and creative technology. As a digital content producer, I also led Russkhof, a gaming channel that grew to more than 450,000 subscribers and 80,000,000 views, with experience in visual storytelling, content strategy and SEO.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

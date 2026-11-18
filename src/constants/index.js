@@ -301,7 +301,7 @@ import {
     {
       name: "Crypto Redux",
       description:
-        "Cryptocurrency application that fetches data from a coin ranking API, displays various news articles and shows evolution charts in the reference to the selected token.",
+        "Cryptocurrency dashboard that retrieves market rankings and news, with token-specific price history charts for exploring market activity.",
       tags: [
         {
           name: "react",
@@ -322,7 +322,7 @@ import {
     {
       name: "Twitter Clone",
       description:
-        "Social app that once authenticated allows users to post tweets, reply to tweets, like tweets with notification trigger and follow other users saved in a mongoDB database.",
+        "Authenticated social app where users can publish posts, reply, like content, follow accounts and receive notifications, with data stored in MongoDB.",
       tags: [
         {
           name: "next.js",
@@ -343,7 +343,7 @@ import {
     {
       name: "Fitness Site",
       description:
-        "Workout website that allows to search gym exercises by targeting a specific body part, show how to do it with GIF illustrations and even fetch different video tutorials from YT.",
+        "Workout finder for searching exercises by body part, viewing GIF demonstrations and browsing related YouTube tutorials.",
       tags: [
         {
           name: "react",
@@ -364,7 +364,7 @@ import {
     {
       name: "Car Showcase",
       description:
-        "Next.js server-side rendered app that fetches from an API different car information like brands, models, fuel-type, displays data in modals with search and filtering capabilities.",
+        "Server-rendered Next.js car discovery app with API-sourced vehicle information, search and filters for brands, models and fuel types.",
       tags: [
         {
           name: "next.js",
@@ -385,7 +385,7 @@ import {
     {
       name: "Sneakers App",
       description:
-        "Web scraping application giving people info about the latest sneaker releases. Allowing users to 'cop' items, leave comments and receive notifications directly on their emails.",
+        "Sneaker release tracker that gathers release information and lets users save items, comment and receive email notifications.",
       tags: [
         {
           name: "next.js",
@@ -406,7 +406,7 @@ import {
     {
       name: "Airbnb Replica",
       description:
-        "M.E.R.N project with authentication, just like the original one, this website allows users to create new listings as hosts, book properties and view its information on their profile page.",
+        "MERN rental marketplace prototype with authentication, host-created listings, property browsing and booking flows.",
       tags: [
         {
           name: "express",

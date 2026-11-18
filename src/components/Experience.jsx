@@ -1,5 +1,5 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
@@ -97,14 +97,32 @@ const EducationCard = ({ item }) => (
 )
 
 const Experience = () => {
+  const prefersReducedMotion = useReducedMotion();
+  const workHeadingVariants = prefersReducedMotion
+    ? { hidden: { opacity: 1, y: 0 }, show: { opacity: 1, y: 0 } }
+    : {
+        hidden: { opacity: 0, y: 24 },
+        show: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.72, ease: [0.22, 1, 0.36, 1] },
+        },
+      };
+
   return (
     <>
-     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>What I have done so far</p>
+     <motion.div
+      variants={workHeadingVariants}
+      initial={prefersReducedMotion ? false : 'hidden'}
+      whileInView='show'
+      viewport={{ once: true, amount: 0.38 }}
+      className='text-left'
+     >
+      <p className={styles.sectionSubText}>WHAT I HAVE DONE SO FAR</p>
       <h2 className={styles.sectionHeadText}>Work Experience.</h2>
      </motion.div>
 
-     <div className='mt-20 flex flex-col'>
+     <div className='mt-10 flex flex-col'>
       <VerticalTimeline>
         {experiences.map((experience) => (
           <ExperienceCard key={`${experience.date}-${experience.title}`} experience={experience} />
@@ -112,12 +130,12 @@ const Experience = () => {
       </VerticalTimeline>
      </div>
 
-     <motion.div variants={textVariant()} className='mt-20'>
-      <p className={styles.sectionSubText}>Academic background</p>
+     <motion.div variants={textVariant()} className='mt-16 text-left'>
+      <p className={styles.sectionSubText}>ACADEMIC BACKGROUND</p>
       <h2 className={styles.sectionHeadText}>Education.</h2>
      </motion.div>
 
-     <div className='mt-12 flex flex-col'>
+     <div className='mt-10 flex flex-col'>
       <VerticalTimeline>
         {education.map((item) => (
           <EducationCard key={`${item.date}-${item.title}`} item={item} />

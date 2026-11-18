@@ -21,20 +21,29 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         gyroscope={false}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='project-image-frame relative h-[230px] w-full overflow-hidden rounded-2xl'>
           <img
             src={image}
-            alt={name}
-            className='w-full h-full object-cover rounded-2xl'
+            alt={`${name} project preview`}
+            width="640"
+            height="408"
+            loading="lazy"
+            decoding="async"
+            className='project-image h-full w-full object-cover'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-             onClick={() => window.open(source_code_link, "_blank")}
+          <div aria-hidden='true' className='project-image-overlay pointer-events-none absolute inset-0' />
+
+          <div className='card-img_hover absolute inset-0 z-10 m-3 flex justify-end'>
+            <a
+             href={source_code_link}
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label={`View ${name} source code on GitHub`}
              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border-[2px]"
             >
-              <img src={github} alt='github' className='w-1/2 h-1/2 object-contain' />
-            </div>
+              <img src={github} alt='' aria-hidden='true' width='20' height='20' />
+            </a>
           </div>
         </div>
         
@@ -70,10 +79,7 @@ const Projects = () => {
       //   variants={fadeIn("", "", 0.1, 1)}
         className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Following projects showcases my skills and experience through real-world
-        examples of my work. Each project is briefly described with links to code 
-        repositories and live demos in it. It reflects my ability to solve complex 
-        problems, work with different technologies, and manage projects effectively.
+        These projects demonstrate my full-stack development work across web applications, data-driven interfaces and online services. Each project includes a concise description of what it does, its core technologies and a direct link to its source code.
       </motion.p>
      </div>
 
@@ -90,4 +96,8 @@ const Projects = () => {
   )
 }
 
-export default SectionWrapper(Projects, "projects");
+export default SectionWrapper(
+  Projects,
+  "projects",
+  "sm:px-16 px-6 sm:pt-16 sm:pb-10 pt-10 pb-6"
+);
