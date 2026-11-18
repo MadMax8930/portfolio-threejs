@@ -18,9 +18,7 @@ import {
     database,
     python,
     nextjs,
-    airbnb,
-    machinima,
-    simplon,
+    express,
     simplon_bis,
     bugali,
     threejs,
@@ -120,13 +118,17 @@ import {
       icon: nodejs,
     },
     {
+      name: "Express.js",
+      icon: express,
+    },
+    {
       name: "Java",
       icon: java,
     },
-   //  {
-   //    name: "git",
-   //    icon: git,
-   //  },
+    {
+      name: "Git",
+      icon: git,
+    },
     {
       name: "Python",
       icon: python,
@@ -163,6 +165,10 @@ import {
       icon: nodejs,
     },
     {
+      name: "Express.js",
+      icon: express,
+    },
+    {
       name: "Python",
       icon: python,
     },
@@ -170,60 +176,97 @@ import {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "Git",
+      icon: git,
+    },
   ];
   
   const experiences = [
     {
-      title: "Content Creator",
-      company_name: "Machinima",
-      icon: machinima,
+      title: "Freelance Engineer & Independent AI Builder",
+      company_name: "Self-employed | Bangkok, Thailand",
+      icon: null,
+      iconSymbol: "ai",
       iconBg: "#383E56",
-      date: "Mar 2014 - Dec 2019",
+      date: "2023 - Present",
       points: [
-        "Owning a Youtube partnership.",
-        "Running a gaming channel with over 450K subscribers and 80M views.",
-        "Creating entertaining video content with a perfectly synchronized audio.",
-        "Testing products in alpha stage before release.",
+        "Building full-stack applications from scoping and architecture through backend, database design and deployment.",
+        "2025-present: Independent AI engineering, including AI agents, workflow automation, LLM integrations, AI-powered applications, software architecture and cinematic production workflows.",
+        "Integrating OpenAI and Anthropic APIs with production prompts, structured outputs, tools and agentic flows.",
+        "Concurrent online English tutoring through Preply, working with international learners in a multilingual environment.",
       ],
     },
     {
-      title: "Market Coordinator",
-      company_name: "Airbnb",
-      icon: airbnb,
-      iconBg: "#E6DEDD",
-      date: "Feb 2020 - Oct 2020",
-      points: [
-        "Managing owners putting their properties up to rent.",
-        "Analyzing market trends and customers' behavior.",
-        "Crafting innovative marketing strategies.",
-        "Running daily operations with partners, ensuring the delivery of an exceptional service.",
-      ],
-    },
-    {
-      title: "Software Developer",
-      company_name: "Simplon",
-      icon: simplon_bis,
-      iconBg: "#383E56",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Modeling, conceptualizing and managing SQL databases.",
-        "Developing client-server applications according to specifications.",
-        "Securing websites and authenticating users across different services.",
-        "Building CI/CD pipelines and deploying web applications.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Bugali",
+      title: "Full-Stack Web Developer",
+      company_name: "Bugali | Paris, France",
       icon: bugali,
+      iconSymbol: "code",
       iconBg: "#E6DEDD",
-      date: "Feb 2022 - Nov 2022",
+      date: "2021 - 2022",
       points: [
-        "Developing and maintaining web applications using React Typescript, Node.js and Docker.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and optimizing SEO performance.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Designed database schemas and optimized queries and indexes.",
+        "Developed full-stack client/server features and integrated REST APIs.",
+        "Collaborated in Agile Scrum and maintained CI/CD pipelines.",
+        "Debugged and refactored application code for reliability and performance.",
       ],
+    },
+    {
+      title: "Market Coordinator - Airbnb Marketplace",
+      company_name: "TELUS International | Cork, Ireland",
+      icon: null,
+      iconSymbol: "marketplace",
+      iconBg: "#383E56",
+      date: "2019 - 2020",
+      points: [
+        "Analyzed marketplace operations, bookings, occupancy and pricing trends.",
+        "Developed dynamic pricing strategies to improve host revenue.",
+        "Coordinated cross-functional operations and resolved marketplace issues.",
+      ],
+    },
+    {
+      title: "Content Creator & Digital Producer - Russkhof",
+      company_name: "Independent channel | Machinima partnership",
+      icon: null,
+      iconSymbol: "cinema",
+      iconBg: "#383E56",
+      date: "2012 - 2018",
+      points: [
+        "Independently grew a gaming YouTube channel to 450,000+ subscribers and 80,000,000+ views.",
+        "Led creative direction and visual storytelling across the end-to-end production pipeline, including editing, audio and thumbnails.",
+        "Managed channel SEO and audience analytics.",
+        "Participated in pre-release alpha build testing with brand partners.",
+      ],
+    },
+  ];
+
+  const education = [
+    {
+      title: "Software Engineer Training",
+      institution: "Simplon",
+      icon: simplon_bis,
+      iconSymbol: "graduation",
+      iconBg: "#383E56",
+      date: "2020 - 2022",
+      details: "DWWM and CDA programs | RNCP levels 5 and 6",
+    },
+    {
+      title: "Bachelor in Applied Mathematics and Computer Science",
+      institution: "Université Paris Descartes",
+      icon: null,
+      iconSymbol: "university",
+      iconBg: "#383E56",
+      date: "2008 - 2011",
+      details: "",
+    },
+    {
+      title: "Scientific Baccalaureate, European Section",
+      institution: "Lycée Voillaume, France",
+      icon: null,
+      iconSymbol: "school",
+      iconBg: "#383E56",
+      date: "2005 - 2008",
+      details: "Graduated with honours",
     },
   ];
   
@@ -383,4 +426,4 @@ import {
     },
   ];
   
-  export { services, technologiesForDesktop, technologiesForMobile, experiences, testimonials, projects };
+  export { services, technologiesForDesktop, technologiesForMobile, experiences, education, testimonials, projects };
