@@ -100,7 +100,14 @@ const Experience = () => {
   const prefersReducedMotion = useReducedMotion();
   const workHeadingVariants = prefersReducedMotion
     ? { hidden: { opacity: 1, y: 0 }, show: { opacity: 1, y: 0 } }
-    : textVariant();
+    : {
+        hidden: { opacity: 0, y: 24 },
+        show: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.72, ease: [0.22, 1, 0.36, 1] },
+        },
+      };
 
   return (
     <>
@@ -108,7 +115,7 @@ const Experience = () => {
       variants={workHeadingVariants}
       initial={prefersReducedMotion ? false : 'hidden'}
       whileInView='show'
-      viewport={{ once: true, amount: 0.1, margin: '0px 0px 120px 0px' }}
+      viewport={{ once: true, amount: 0.38 }}
       className='text-left'
      >
       <p className={styles.sectionSubText}>WHAT I HAVE DONE SO FAR</p>
