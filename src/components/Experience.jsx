@@ -16,15 +16,15 @@ const ExperienceCard = ({experience}) => (
    icon={<TimelineIcon symbol={experience.iconSymbol} />}
   >
     <div>
-      <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-      <p className='text-secondary text-[16px] font-semibold' style={{margin: 0}}>{experience.company_name}</p>
+      <h3 className='text-white text-[22px] font-bold sm:text-[24px]'>{experience.title}</h3>
+      <p className='text-secondary text-[15px] font-semibold sm:text-[16px]' style={{margin: 0}}>{experience.company_name}</p>
     </div>
 
     <ul className='mt-5 list-disc ml-5 space-y-2'>
       {experience.points.map((point, index) => (
         <li
           key={`experience-point-${index}`}
-          className='text-white-100 text-[14px] pl-1 tracking-wider'
+          className='text-white-100 text-[13px] pl-1 tracking-wider sm:text-[14px]'
         >
           {point}
         </li>
@@ -88,11 +88,11 @@ const EducationCard = ({ item }) => (
     iconStyle={{ background: '#383E56' }}
     icon={<TimelineIcon symbol={item.iconSymbol} />}
   >
-    <h3 className='text-white text-[20px] font-bold'>{item.title}</h3>
+    <h3 className='text-white text-[18px] font-bold sm:text-[20px]'>{item.title}</h3>
     {item.institution && (
-      <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>{item.institution}</p>
+      <p className='text-secondary text-[15px] font-semibold sm:text-[16px]' style={{ margin: 0 }}>{item.institution}</p>
     )}
-    {item.details && <p className='text-white-100 text-[14px] mt-3'>{item.details}</p>}
+    {item.details && <p className='text-white-100 text-[13px] mt-3 sm:text-[14px]'>{item.details}</p>}
   </VerticalTimelineElement>
 )
 

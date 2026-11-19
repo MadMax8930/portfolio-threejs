@@ -232,7 +232,7 @@ import {
       iconBg: "#383E56",
       date: "2012 - 2018",
       points: [
-        "Independently grew a gaming YouTube channel to 450,000+ subscribers and 80,000,000+ views.",
+        "Grew an independent gaming channel to 450K+ subscribers and more than 80M views.",
         "Led creative direction and visual storytelling across the end-to-end production pipeline, including editing, audio and thumbnails.",
         "Managed channel SEO and audience analytics.",
         "Participated in pre-release alpha build testing with brand partners.",
