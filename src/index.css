@@ -55,6 +55,24 @@
   display: block;
 }
 
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 60;
+  transform: translateY(calc(-100% - 1rem));
+  border: 1px solid rgba(145, 94, 255, 0.8);
+  border-radius: 0.5rem;
+  background: #1d1836;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 .tech-card {
   transition: border-color 240ms ease, box-shadow 240ms ease;
 }
@@ -119,6 +137,20 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .canvas-loader {
+    animation: none;
+  }
+
+  .skip-link {
+    transition: none;
+  }
+
+  .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in,
+  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+    animation: none;
+    visibility: visible;
+  }
+
   .tech-card,
   .tech-card-logo,
   .tech-card-label {
