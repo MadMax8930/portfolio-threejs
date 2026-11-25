@@ -35,7 +35,7 @@ const Hero = () => {
             <span className='text-[#915eff]'>Max Surnin</span>
           </h1>
           <p className={`${styles.heroSubText}`}>
-            Full-stack software engineer &amp; independent AI builder.
+            Full-stack software engineer &amp; independent AI builder.{' '}
             <br className='sm:block hidden' />
             Bangkok-based, working with international teams.
           </p>
