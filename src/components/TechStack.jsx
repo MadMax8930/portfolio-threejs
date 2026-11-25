@@ -44,8 +44,9 @@ const TechStack = () => {
     <>
       <motion.div
         variants={gridVariants}
-        initial={prefersReducedMotion ? false : 'hidden'}
-        whileInView='show'
+        initial={prefersReducedMotion ? 'show' : 'hidden'}
+        animate={prefersReducedMotion ? 'show' : undefined}
+        whileInView={prefersReducedMotion ? undefined : 'show'}
         viewport={{ once: true, amount: 0.15 }}
         className='grid w-full grid-cols-4 justify-items-center gap-2 md:grid-cols-6 md:gap-5 lg:grid-cols-8'
       >

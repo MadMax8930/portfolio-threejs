@@ -1,5 +1,5 @@
 import Tilt from 'react-parallax-tilt';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { github } from '../assets';
@@ -8,12 +8,13 @@ import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, prefersReducedMotion }) => {
   return (
     <motion.div 
       // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
       <Tilt
+        tiltEnable={!prefersReducedMotion}
         tiltMaxAngleX={45}
         tiltMaxAngleY={45}
         scale={1}
@@ -65,6 +66,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 }
 
 const Projects = () => {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <>
      <motion.div
@@ -88,6 +91,7 @@ const Projects = () => {
         <ProjectCard 
           key={`project-${index}`}
           index={index} 
+          prefersReducedMotion={prefersReducedMotion}
           {...project}
         />
       ))}

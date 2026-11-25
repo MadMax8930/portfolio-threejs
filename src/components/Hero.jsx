@@ -1,9 +1,28 @@
-import {motion} from 'framer-motion';
+import { lazy, Suspense, useEffect, useState } from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import {styles} from '../styles';
-import { ComputersCanvas } from './canvas';
+import CanvasChunkFallback from './CanvasChunkFallback';
+
+const ComputersCanvas = lazy(() => import('./canvas/Computers'));
+const DESKTOP_CANVAS_QUERY = '(min-width: 640px)';
 
 const Hero = () => {
+  const prefersReducedMotion = useReducedMotion();
+  const [shouldMountComputersCanvas, setShouldMountComputersCanvas] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(DESKTOP_CANVAS_QUERY).matches
+  );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(DESKTOP_CANVAS_QUERY);
+    const handleMediaQueryChange = (event) => {
+      if (event.matches) setShouldMountComputersCanvas(true);
+    };
+
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    return () => mediaQuery.removeEventListener('change', handleMediaQueryChange);
+  }, []);
+
   return (
     <section className='relative w-full sm:h-screen xs:h-[22rem] h-[20rem] mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl max-auto flex flex-row items-start gap-5`}>
@@ -16,7 +35,7 @@ const Hero = () => {
             <span className='text-[#915eff]'>Max Surnin</span>
           </h1>
           <p className={`${styles.heroSubText}`}>
-            Full-stack software engineer &amp; independent AI builder.
+            Full-stack software engineer &amp; independent AI builder.{' '}
             <br className='sm:block hidden' />
             Bangkok-based, working with international teams.
           </p>
@@ -32,16 +51,20 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {shouldMountComputersCanvas && (
+        <Suspense fallback={<CanvasChunkFallback className='sm:flex sm:pl-12 hidden' label="Loading computer scene" />}>
+          <ComputersCanvas />
+        </Suspense>
+      )}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full sm:flex hidden justify-center items-center'>
-        <a href='#about'>
+          <a href='#about' aria-label='Scroll to About section'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
-              animate={{
+              animate={prefersReducedMotion ? undefined : {
                 y: [0, 24, 0]
               }}
-              transition={{
+              transition={prefersReducedMotion ? undefined : {
                 duration: 1.5,
                 repeat: Infinity,
                 repeatType: 'loop'

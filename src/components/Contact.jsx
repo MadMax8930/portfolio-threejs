@@ -1,14 +1,21 @@
-import { useState, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { lazy, Suspense, useEffect, useState, useRef } from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
+import CanvasChunkFallback from './CanvasChunkFallback';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
-const Contact = () => {
+const EarthCanvas = lazy(() => import('./canvas/Earth'));
+
+const Contact = ({ onCanvasesApproach }) => {
   const submitLockRef = useRef(false);
+  const earthCanvasWrapperRef = useRef(null);
+  const prefersReducedMotion = useReducedMotion();
+  const [shouldMountEarthCanvas, setShouldMountEarthCanvas] = useState(
+    () => typeof IntersectionObserver === 'undefined'
+  );
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -16,6 +23,29 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false);
   const [submissionStatus, setSubmissionStatus] = useState({ type: '', message: '' });
+
+  useEffect(() => {
+    if (shouldMountEarthCanvas) return;
+
+    const wrapper = earthCanvasWrapperRef.current;
+    if (!wrapper) return;
+
+    if (typeof IntersectionObserver === 'undefined') {
+      setShouldMountEarthCanvas(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry?.isIntersecting) {
+        setShouldMountEarthCanvas(true);
+        onCanvasesApproach?.(true);
+        observer.disconnect();
+      }
+    }, { rootMargin: '1000px' });
+
+    observer.observe(wrapper);
+    return () => observer.disconnect();
+  }, [onCanvasesApproach, shouldMountEarthCanvas]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -167,10 +197,15 @@ const Contact = () => {
       </motion.div>
 
       <motion.div
+        ref={earthCanvasWrapperRef}
         variants={slideIn('right','tween', 0,2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <EarthCanvas/>
+        {shouldMountEarthCanvas && (
+          <Suspense fallback={<CanvasChunkFallback label="Loading Earth scene" />}>
+            <EarthCanvas reduceMotion={prefersReducedMotion === true} />
+          </Suspense>
+        )}
       </motion.div>
     </div>
   )

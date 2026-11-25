@@ -1,14 +1,15 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title, icon, prefersReducedMotion }) => (
     <Tilt
+      tiltEnable={!prefersReducedMotion}
       tiltMaxAngleX={45}
       tiltMaxAngleY={45}
       scale={1}
@@ -33,6 +34,8 @@ const ServiceCard = ({ index, title, icon }) => (
 
 
 const About = () => {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -49,7 +52,7 @@ const About = () => {
 
       <div className='mt-20 grid grid-cols-2 gap-4 sm:flex sm:flex-wrap sm:gap-10'>
         {services.map((service, index) => (
-          <ServiceCard key={service.icon} index={index} {...service}/>
+          <ServiceCard key={service.icon} index={index} prefersReducedMotion={prefersReducedMotion} {...service}/>
         ))}
       </div>
     </>

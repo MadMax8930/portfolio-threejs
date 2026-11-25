@@ -113,8 +113,9 @@ const Experience = () => {
     <>
      <motion.div
       variants={workHeadingVariants}
-      initial={prefersReducedMotion ? false : 'hidden'}
-      whileInView='show'
+      initial={prefersReducedMotion ? 'show' : 'hidden'}
+      animate={prefersReducedMotion ? 'show' : undefined}
+      whileInView={prefersReducedMotion ? undefined : 'show'}
       viewport={{ once: true, amount: 0.38 }}
       className='text-left'
      >
@@ -132,8 +133,9 @@ const Experience = () => {
 
      <motion.div
       variants={workHeadingVariants}
-      initial={prefersReducedMotion ? false : 'hidden'}
-      whileInView='show'
+      initial={prefersReducedMotion ? 'show' : 'hidden'}
+      animate={prefersReducedMotion ? 'show' : undefined}
+      whileInView={prefersReducedMotion ? undefined : 'show'}
       viewport={{ once: true, amount: 0.2 }}
       className='mt-16 text-left'
      >
