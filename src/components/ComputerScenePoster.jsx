@@ -1,7 +1,7 @@
 const ComputerScenePoster = ({ loading, onActivate }) => (
   <button
     type='button'
-    aria-label={loading ? 'Loading 3D scene' : 'Click to activate the 3D scene'}
+    aria-label={loading ? 'Loading 3D' : 'Activate interactive 3D workstation'}
     aria-busy={loading}
     onClick={onActivate}
     onFocus={onActivate}
@@ -98,20 +98,14 @@ const ComputerScenePoster = ({ loading, onActivate }) => (
       <circle cx='812' cy='535' r='3' fill='#d8ccff' />
       <rect width='960' height='640' fill='#050816' opacity='.24' />
     </svg>
-    <span className='pointer-events-none absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 sm:pl-12'>
-      {loading ? (
-        <span className='flex translate-y-[18px] flex-col items-center gap-4'>
-          <span className='hero-scene-loader' aria-hidden='true' />
-          <span className='text-sm font-medium tracking-wide text-[#dfd9ff] drop-shadow-[0_1px_8px_rgba(145,94,255,0.75)]' role='status'>
-            Loading 3D scene…
-          </span>
+    {loading && (
+      <span className='pointer-events-none absolute left-1/2 z-20 flex -translate-x-1/2 flex-col items-center gap-2 bottom-[calc(2.5rem+4rem+0.75rem)]'>
+        <span className='hero-scene-loader' aria-hidden='true' />
+        <span className='text-xs font-medium tracking-wide text-[#dfd9ff] drop-shadow-[0_1px_8px_rgba(145,94,255,0.75)] lg:text-sm' role='status'>
+          Loading 3D
         </span>
-      ) : (
-        <span className='text-sm font-medium tracking-wide text-[#dfd9ff]/80 drop-shadow-[0_1px_8px_rgba(145,94,255,0.65)]'>
-          Click to activate the 3D scene
-        </span>
-      )}
-    </span>
+      </span>
+    )}
   </button>
 );
 
