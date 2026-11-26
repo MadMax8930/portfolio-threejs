@@ -50,12 +50,10 @@ const ComputerScenePoster = ({ loading, onActivate }) => (
       <path d='M122 476h684l61 46H71z' fill='url(#poster-desk)' stroke='#75668f' strokeOpacity='.48' />
       <path d='M167 522v34m584-34v34' stroke='#343047' strokeWidth='12' />
 
-      <g>
+      <g transform='translate(-35 96) translate(476 280) scale(.9 .78) translate(-476 -280)'>
         <path d='M312 162h329a16 16 0 0 1 16 16v222H296V178a16 16 0 0 1 16-16Z' fill='#171727' stroke='#9189a8' strokeWidth='5' />
         <rect x='311' y='178' width='331' height='200' rx='5' fill='url(#poster-screen)' />
         <circle cx='476' cy='390' r='4' fill='#8c83a6' />
-        <path d='M462 400h31l11 75h-53z' fill='#3a344d' />
-        <path d='M409 475h137l30 9H380z' fill='#5c526f' />
         <g strokeLinecap='round' strokeWidth='5'>
           <path d='M335 205h74' stroke='#bd7bff' />
           <path d='M335 225h132' stroke='#59c8ff' />
@@ -67,8 +65,10 @@ const ComputerScenePoster = ({ loading, onActivate }) => (
           <path d='M335 345h71' stroke='#bd7bff' />
         </g>
       </g>
+      <path d='M417 470h31l2 5h-35z' fill='#3a344d' />
+      <path d='M374 475h137l30 9H345z' fill='#5c526f' />
 
-      <g>
+      <g transform='translate(0 70)'>
         <rect x='678' y='277' width='124' height='204' rx='13' fill='#191827' stroke='#716985' strokeWidth='4' />
         <path d='M692 296h96v166h-96z' fill='#0d0d18' />
         <g fill='none' stroke='#915eff' strokeWidth='5' opacity='.75'>
@@ -82,7 +82,7 @@ const ComputerScenePoster = ({ loading, onActivate }) => (
         <circle cx='740' cy='468' r='3' fill='#6cf0cc' />
       </g>
 
-      <g fill='#272238' stroke='#766b91' strokeWidth='3'>
+      <g transform='translate(0 28) translate(414 476) scale(.72 .55) translate(-414 -476)' fill='#272238' stroke='#766b91' strokeWidth='3'>
         <rect x='191' y='350' width='48' height='126' rx='8' />
         <rect x='590' y='350' width='48' height='126' rx='8' />
         <circle cx='215' cy='385' r='12' fill='#181624' />
@@ -96,6 +96,7 @@ const ComputerScenePoster = ({ loading, onActivate }) => (
       </g>
       <circle cx='812' cy='535' r='12' fill='none' stroke='#915eff' strokeWidth='3' />
       <circle cx='812' cy='535' r='3' fill='#d8ccff' />
+      <rect width='960' height='640' fill='#050816' opacity='.24' />
     </svg>
 
     <span className='absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 items-center gap-3 rounded-full border border-white/15 bg-[#090816]/80 px-4 py-2 text-[11px] tracking-[0.14em] text-[#dfd9ff] backdrop-blur-sm sm:left-[58%]'>
