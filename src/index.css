@@ -331,6 +331,30 @@
   transform: translateZ(0);
 }
 
+.hero-scene-loader {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid rgba(145, 94, 255, 0.25);
+  border-top-color: #c4b5fd;
+  border-right-color: #915eff;
+  border-radius: 50%;
+  animation: hero-scene-spin 0.9s linear infinite;
+  filter: drop-shadow(0 0 8px rgba(145, 94, 255, 0.45));
+}
+
+@keyframes hero-scene-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-scene-loader {
+    animation: none;
+  }
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {
