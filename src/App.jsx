@@ -16,7 +16,7 @@ const App = () => {
           <a className="skip-link" href="#main-content">
             Skip to main content
           </a>
-          <header>
+          <header className="relative z-40">
             <Navbar />
           </header>
           <main id="main-content" tabIndex="-1">

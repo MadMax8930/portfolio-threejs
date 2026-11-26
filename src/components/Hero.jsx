@@ -70,7 +70,7 @@ const Hero = () => {
 
   return (
     <section className='relative w-full sm:h-screen xs:h-[22rem] h-[20rem] mx-auto'>
-      <div className={`${styles.paddingX} pointer-events-none absolute inset-0 top-[120px] z-20 max-w-7xl max-auto flex flex-row items-start gap-5`}>
+      <div className={`${styles.paddingX} pointer-events-none absolute inset-0 top-[136px] sm:top-[120px] z-20 max-w-7xl max-auto flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
           <div className='w-1 sm:h-80 h-40 violet-gradient'/>
