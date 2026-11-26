@@ -3,7 +3,6 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import designer from "./designer.png";
 import frontend from "./frontend.png";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -39,13 +38,19 @@ import soufiane_bw from "./company/soufiane-modified.png";
 import claire from "./company/claire.png";
 import claire_bw from "./company/claire-modified.png";
 
-import crypto_project from "./project/crypto-modified.png";
-import twitter_project from "./project/twitter-modified.png";
-import carhub_project from "./project/carhub-modified.png";
-import youtube_project from "./project/youtube-modified.png";
-import airbnb_project from "./project/airbnb-modified.png";
-import fitness_project from "./project/fitness-modified.png";
-import sneakers_project from "./project/sneakers-modified.png";
+import crypto_project_400 from "./project/optimized/crypto-400.webp";
+import crypto_project_800 from "./project/optimized/crypto-800.webp";
+import twitter_project_400 from "./project/optimized/twitter-400.webp";
+import twitter_project_800 from "./project/optimized/twitter-800.webp";
+import carhub_project_400 from "./project/optimized/carhub-400.webp";
+import carhub_project_800 from "./project/optimized/carhub-800.webp";
+import fitness_project_400 from "./project/optimized/fitness-400.webp";
+import fitness_project_800 from "./project/optimized/fitness-800.webp";
+import sneakers_project_400 from "./project/optimized/sneakers-400.webp";
+import sneakers_project_800 from "./project/optimized/sneakers-800.webp";
+import airbnb_project_400 from "./project/optimized/airbnb-400.webp";
+import airbnb_project_800 from "./project/optimized/airbnb-800.webp";
+import github_optimized from "./github-optimized.webp";
 
 // import crypto_project from "./crypto.png";
 // import twitter_project from "./twitter.png";
@@ -61,7 +66,6 @@ export {
   creator,
   designer,
   frontend,
-  github,
   menu,
   close,
   css,
@@ -93,11 +97,17 @@ export {
   claire_bw,
   soufiane,
   soufiane_bw,
-  crypto_project,
-  twitter_project,
-  carhub_project,
-  youtube_project,
-  airbnb_project,
-  fitness_project,
-  sneakers_project,
+  crypto_project_400,
+  crypto_project_800,
+  twitter_project_400,
+  twitter_project_800,
+  carhub_project_400,
+  carhub_project_800,
+  fitness_project_400,
+  fitness_project_800,
+  sneakers_project_400,
+  sneakers_project_800,
+  airbnb_project_400,
+  airbnb_project_800,
+  github_optimized,
 };
