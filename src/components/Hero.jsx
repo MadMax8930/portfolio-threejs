@@ -70,7 +70,7 @@ const Hero = () => {
 
   return (
     <section className='relative w-full sm:h-screen xs:h-[22rem] h-[20rem] mx-auto'>
-      <div className={`${styles.paddingX} pointer-events-none absolute inset-0 top-[136px] sm:top-[120px] z-20 max-w-7xl max-auto flex flex-row items-start gap-5`}>
+      <div className={`${styles.paddingX} pointer-events-none absolute inset-0 top-[104px] sm:top-[120px] z-20 max-w-7xl max-auto flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
           <div className='w-1 sm:h-80 h-40 violet-gradient'/>
@@ -84,15 +84,29 @@ const Hero = () => {
             <br className='sm:block hidden' />
             Bangkok-based, working with international teams.
           </p>
-          <a
-            href='https://linktr.ee/maxsurnin'
-            target='_blank'
-            rel='noopener noreferrer'
-            aria-label='More about me (opens in a new tab)'
-            className='relative z-30 mt-6 ml-auto flex min-h-[44px] w-fit items-center justify-center rounded-full border border-[#915eff]/60 px-5 text-[11px] font-medium tracking-[0.16em] text-[#dfd9ff] transition-colors duration-200 hover:border-[#915eff] hover:bg-[#915eff]/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#915eff] focus-visible:ring-offset-2 focus-visible:ring-offset-primary pointer-events-auto sm:absolute sm:right-0 sm:top-[22px] sm:mt-0 sm:ml-0 sm:z-30 lg:top-[35px]'
-          >
-            MORE ABOUT ME ↗
-          </a>
+          <div className='relative mt-6 ml-auto w-fit sm:absolute sm:right-0 sm:top-0 sm:mt-0 sm:ml-0 xl:top-[35px]'>
+            <a
+              href='https://linktr.ee/maxsurnin'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='More about me (opens in a new tab)'
+              className='relative z-30 flex min-h-[44px] w-fit items-center justify-center rounded-full border border-[#915eff]/60 px-5 text-[11px] font-medium tracking-[0.16em] text-[#dfd9ff] transition-colors duration-200 hover:border-[#915eff] hover:bg-[#915eff]/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#915eff] focus-visible:ring-offset-2 focus-visible:ring-offset-primary pointer-events-auto'
+            >
+              MORE ABOUT ME ↗
+            </a>
+            {isDesktop && !hasRenderedComputersScene && (
+              <span className='pointer-events-none absolute left-1/2 top-full z-30 mt-1 flex -translate-x-1/2 items-center gap-3 whitespace-nowrap rounded-full border border-white/15 bg-[#090816]/80 px-4 py-2 text-[11px] tracking-[0.14em] text-[#dfd9ff] backdrop-blur-sm xl:mt-4'>
+                {shouldMountComputersCanvas ? (
+                  <>
+                    <span className='canvas-loader' aria-hidden='true' />
+                    <span role='status'>LOADING INTERACTIVE SCENE</span>
+                  </>
+                ) : (
+                  <span>ACTIVATE 3D SCENE</span>
+                )}
+              </span>
+            )}
+          </div>
         </div>
       </div>
 

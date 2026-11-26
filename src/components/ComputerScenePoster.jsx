@@ -99,16 +99,6 @@ const ComputerScenePoster = ({ loading, onActivate }) => (
       <rect width='960' height='640' fill='#050816' opacity='.24' />
     </svg>
 
-    <span className='absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 items-center gap-3 rounded-full border border-white/15 bg-[#090816]/80 px-4 py-2 text-[11px] tracking-[0.14em] text-[#dfd9ff] backdrop-blur-sm sm:left-[58%]'>
-      {loading ? (
-        <>
-          <span className='canvas-loader' aria-hidden='true' />
-          <span role='status'>LOADING INTERACTIVE SCENE</span>
-        </>
-      ) : (
-        <span>ACTIVATE 3D SCENE</span>
-      )}
-    </span>
   </button>
 );
 
