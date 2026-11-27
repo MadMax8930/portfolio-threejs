@@ -1,6 +1,6 @@
-import { Suspense, useEffect, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import { Suspense, useEffect, useRef, useState } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { OrbitControls, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
@@ -29,7 +29,19 @@ const Computers = ({isMobile}) => {
   )
 }
 
-const ComputersCanvas = () => {
+const FirstFrameNotifier = ({ onFirstFrame }) => {
+  const hasNotified = useRef(false);
+
+  useFrame(() => {
+    if (hasNotified.current) return;
+    hasNotified.current = true;
+    window.requestAnimationFrame(onFirstFrame);
+  });
+
+  return null;
+};
+
+const ComputersCanvas = ({ onFirstFrame }) => {
   const [isMobile, setIsMobile] = useState(false);
   
   useEffect(() => {
@@ -52,7 +64,6 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
       resize={{ polyfill: ResizeObserver }}
     >
       <Suspense fallback={<CanvasLoader/>}>
@@ -62,9 +73,8 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Computers isMobile={isMobile} />
+        <FirstFrameNotifier onFirstFrame={onFirstFrame} />
       </Suspense>
-
-      <Preload all/>
     </Canvas>
   )
 }

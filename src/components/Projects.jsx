@@ -2,13 +2,13 @@ import Tilt from 'react-parallax-tilt';
 import { motion, useReducedMotion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { github } from '../assets';
+import { github_optimized } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link, prefersReducedMotion }) => {
+const ProjectCard = ({ index, name, description, tags, image, imageSrcSet, source_code_link, prefersReducedMotion }) => {
   return (
     <motion.div 
       // variants={fadeIn("up", "spring", index * 0.5, 0.75)}
@@ -25,6 +25,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
         <div className='project-image-frame relative h-[230px] w-full overflow-hidden rounded-2xl'>
           <img
             src={image}
+            srcSet={imageSrcSet}
+            sizes='(min-width: 640px) 320px, calc(100vw - 88px)'
             alt={`${name} project preview`}
             width="640"
             height="408"
@@ -43,7 +45,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
              aria-label={`View ${name} source code on GitHub`}
              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border-[2px]"
             >
-              <img src={github} alt='' aria-hidden='true' width='20' height='20' />
+              <img src={github_optimized} alt='' aria-hidden='true' width='20' height='20' />
             </a>
           </div>
         </div>
